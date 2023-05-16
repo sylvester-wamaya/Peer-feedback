@@ -47,12 +47,4 @@ document.addEventListener('click', (e) => {
   }
 });
 
-
-  todo.forEach((task) => {
-    const listcon =document.querySelector(".list-item")
-    if()
-    listcon.classList.add("checked")
-  });
-
-
 // todo.defaultComplete();
