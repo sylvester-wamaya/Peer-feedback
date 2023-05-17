@@ -1,5 +1,5 @@
 import './style.css';
-import List from './crud.js';
+import List from './modules/crud.js';
 import { checkvalue, clearAll } from './modules/interract.js';
 
 // Create a ne todo list
