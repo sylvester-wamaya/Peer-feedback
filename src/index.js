@@ -1,6 +1,6 @@
 import './style.css';
 import List from './crud.js';
-import { checkvalue, clearAll } from './interract.js';
+import { checkvalue, clearAll } from './modules/interract.js';
 
 // Create a ne todo list
 const todo = new List();
