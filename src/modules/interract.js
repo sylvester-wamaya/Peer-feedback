@@ -1,5 +1,5 @@
 // Checkbox function
-export function checkvalue(list) {
+export const checkvalue = (list) => {
   document.addEventListener('change', (e) => {
     if (e.target.classList.contains('to-do')) {
       const index = e.target.dataset.listIndex - 1;
@@ -11,7 +11,7 @@ export function checkvalue(list) {
 }
 
 // Clear all selected tasks
-export function clearAll(list) {
+export const clearAll = (list) => {
   const clr = document.querySelector('button');
   clr.addEventListener('click', () => {
     list.clear();
