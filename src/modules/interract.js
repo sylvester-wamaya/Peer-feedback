@@ -8,7 +8,7 @@ export const checkvalue = (list) => {
       list.checked(index);
     }
   });
-}
+};
 
 // Clear all selected tasks
 export const clearAll = (list) => {
@@ -16,4 +16,4 @@ export const clearAll = (list) => {
   clr.addEventListener('click', () => {
     list.clear();
   });
-}
+};

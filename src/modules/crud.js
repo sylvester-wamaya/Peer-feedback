@@ -38,7 +38,7 @@ class List {
     });
   }
 
-  clearChildren(){
+  static clearChildren() {
     while (list.firstChild) {
       list.removeChild(list.firstChild);
     }
@@ -50,7 +50,7 @@ class List {
     todoItem.index = this.list.length + 1;
     this.list.push(todoItem);
     localStorage.setItem('todo', JSON.stringify(this.list));
-    this.clearChildren()
+    List.clearChildren();
     this.display();
   }
 
@@ -74,7 +74,7 @@ class List {
       }
     });
     localStorage.setItem('todo', JSON.stringify(this.list));
-    this.clearChildren()
+    List.clearChildren();
     this.display();
   }
 
@@ -82,7 +82,7 @@ class List {
   edit(index, toDo) {
     this.list[index].description = toDo;
     localStorage.setItem('todo', JSON.stringify(this.list));
-    this.clearChildren()
+    List.clearChildren();
     this.display();
   }
 
@@ -118,10 +118,9 @@ class List {
     this.reindexTasks();
     localStorage.setItem('todo', JSON.stringify(this.list));
 
-    this.clearChildren()
+    List.clearChildren();
     this.display();
   }
-
 }
 
 export default List;
