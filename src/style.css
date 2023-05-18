@@ -88,10 +88,6 @@ input:focus {
   width: 100%;
 }
 
-.background-color {
-  background-color: red;
-}
-
 .checked {
   text-decoration: line-through;
 }
